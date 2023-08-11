@@ -1,10 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
-body{
+
+body {
     display: grid;
     height: 100vh;
     place-items: center;
@@ -13,12 +14,19 @@ body{
     background-repeat: no-repeat;
 }
 
-
-
-.container{
+.container {
     background-color: white;
     max-width: 350px;
     width: 100%;
     padding: 25px 30px;
     border-radius: 5px;
+    position: relative;
+}
+.container .logo img{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: 70%;
+    top: 5px;
+
 }
