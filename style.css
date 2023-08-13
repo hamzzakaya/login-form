@@ -21,6 +21,7 @@ body {
     padding: 25px 30px;
     border-radius: 5px;
     position: relative;
+    opacity: 0.8;
 }
 
 .container .logo img {
@@ -65,7 +66,8 @@ body {
     font-size: 16px;
     border: none;
 }
-.container form .underline:before{
+
+.container form .underline:before {
     position: absolute;
     content: '';
     height: 2px;
@@ -74,7 +76,8 @@ body {
     left: 0;
     right: 0;
 }
-.container form .underline:after{
+
+.container form .underline:after {
     position: absolute;
     content: '';
     height: 2px;
@@ -87,29 +90,89 @@ body {
     transition: 0.3s ease;
 
 }
-.container form .input-box input:focus ~ .underline:after,
-.container form .input-box input:valid ~ .underline:after{
+
+.container form .input-box input:focus~.underline:after,
+.container form .input-box input:valid~.underline:after {
     transform: scale(1);
     transform-origin: left;
 
 }
-.container form .button{
+
+.container form .button {
     margin: 40px 0 20px 0;
 
 }
-.container form .input-box input[type="submit"]{
+
+.container form .input-box input[type="submit"] {
     font-size: 17px;
     color: #fff;
     border-radius: 5px;
     cursor: pointer;
     background-color: red;
+    transition: all 0.3s ease;
 
 }
-.container form .input-box input[type="submit"]:hover{
+
+.container form .input-box input[type="submit"]:hover {
     letter-spacing: 1px;
     background: rgba(0, 0, 0, 0.15);
     color: red;
     font-weight: bold;
     border-radius: 10px;
-    
+
+}
+
+.container .text {
+    font-size: 14px;
+    text-align: center;
+}
+
+.container .github a,
+.container .twitter a,
+.container .facebook a {
+    display: block;
+    width: 100%;
+    height: 45px;
+    font-size: 15px;
+    text-decoration: none;
+    padding-left: 20px;
+    color: #fff;
+    line-height: 45px;
+    border-radius: 5px;
+}
+
+.container .github a {
+    background: #24292e;
+    margin: 20px 0 15px 0;
+}
+
+.container .github a:hover {
+    background: #566575;
+}
+
+.container .twitter a {
+    background: #1ad1f2;
+    margin: 20px 0 15px 0;
+
+}
+
+.container .twitter a:hover {
+    background: #a7e6f0;
+    color: #24292e;
+}
+
+.container .facebook a {
+    background: #4267b2;
+    margin: 20px 0 50px 0;
+
+}
+
+.container .facebook a:hover {
+    color: #24292e;
+}
+.container .github i,
+.container .twitter i,
+.container .facebook i{
+    font-size: 22px;
+    padding-right: 22px;
 }
