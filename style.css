@@ -82,6 +82,25 @@ body {
     left: 0;
     right: 0;
     background: red;
-    
+    transform: scale(0);
+    transform-origin: left;
+    transition: 0.3s ease;
 
+}
+.container form .input-box input:focus ~ .underline:after,
+.container form .input-box input:valid ~ .underline:after{
+    transform: scale(1);
+    transform-origin: left;
+
+}
+.container form .button{
+    margin: 40px 0 20px 0;
+
+}
+.container form .input-box input[type="submit"]{
+    font-size: 17px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: red;
 }
